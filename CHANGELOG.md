@@ -1,5 +1,41 @@
 # Change Log
 
+## [2.7.2](https://github.com/auth0/Auth0.swift/tree/2.7.2) (2024-05-08)
+[Full Changelog](https://github.com/auth0/Auth0.swift/compare/2.7.1...2.7.2)
+
+**Fixed**
+- fix: removed the possibility of concurrent webauth transactions to handle continuation misuse [\#848](https://github.com/auth0/Auth0.swift/pull/848) ([desusai7](https://github.com/desusai7))
+- fix: removed the validation of incoming redirect_uri once the webauth flow resumes back [\#850](https://github.com/auth0/Auth0.swift/pull/850) ([desusai7](https://github.com/desusai7))
+- fix: added url error code dataNotAllowed as a network error [\#847](https://github.com/auth0/Auth0.swift/pull/847) ([desusai7](https://github.com/desusai7))
+
+## [2.7.1](https://github.com/auth0/Auth0.swift/tree/2.7.1) (2024-05-03)
+[Full Changelog](https://github.com/auth0/Auth0.swift/compare/2.7.0...2.7.1)
+
+**Fixed**
+- fix: fixed the declaration of the privacy manifest in Auth0.podspec [\#846](https://github.com/auth0/Auth0.swift/pull/846) ([desusai7](https://github.com/desusai7))
+
+## [2.7.0](https://github.com/auth0/Auth0.swift/tree/2.7.0) (2024-04-12)
+[Full Changelog](https://github.com/auth0/Auth0.swift/compare/2.6.0...2.7.0)
+
+**Added**
+- chore: Add privacy manifest to Auth0.Swift [\#841](https://github.com/auth0/Auth0.swift/pull/841) ([poovamraj](https://github.com/poovamraj))
+
+## [2.6.0](https://github.com/auth0/Auth0.swift/tree/2.6.0) (2024-03-01)
+[Full Changelog](https://github.com/auth0/Auth0.swift/compare/2.5.0...2.6.0)
+
+**Added**
+- Add support for HTTPS callbacks [SDK-4749] [\#832](https://github.com/auth0/Auth0.swift/pull/832) ([Widcket](https://github.com/Widcket))
+- Add new error type to AuthenticationError [\#820](https://github.com/auth0/Auth0.swift/pull/820) ([lordzsolt](https://github.com/lordzsolt))
+
+**Changed**
+- Update PKCE-related messaging [\#789](https://github.com/auth0/Auth0.swift/pull/789) ([Widcket](https://github.com/Widcket))
+
+**Deprecated**
+- Deprecate methods related to updating user attributes using the Management API [\#815](https://github.com/auth0/Auth0.swift/pull/815) ([Widcket](https://github.com/Widcket))
+
+**Fixed**
+- Fix crash when the bundle ID contains characters not allowed in URL schemes [\#786](https://github.com/auth0/Auth0.swift/pull/786) ([Widcket](https://github.com/Widcket))
+
 ## [2.5.0](https://github.com/auth0/Auth0.swift/tree/2.5.0) (2023-07-18)
 [Full Changelog](https://github.com/auth0/Auth0.swift/compare/2.4.0...2.5.0)
 
