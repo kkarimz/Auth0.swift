@@ -9,7 +9,7 @@ extension WebAuthentication {
         return { url, callback in
             let session: ASWebAuthenticationSession
 
-            #if compiler(>=5.10)
+            #if compiler(>=5.10) && !os(visionOS)
             if #available(iOS 17.4, macOS 14.4, *) {
                 if redirectURL.scheme == "https" {
                     session = ASWebAuthenticationSession(url: url,
